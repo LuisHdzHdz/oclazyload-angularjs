@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ejemplo ocLazyLoad</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+</head>
+<body>
+<br/><br/>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
+                <li role="presentation"><a ui-sref="profile">Profile</a></li>
+                <li role="presentation"><a ui-sref="messages">Messages</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div ui-view></div>
+</div>
+    <script src="http://localhost/cdn/js/angular/angular.min.js"></script>
+    <script src="http://localhost/cdn/js/ui/ui-router.js"></script>
+    <script src="http://localhost/cdn/js/3party/ocLazyLoad.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.routes.js"></script>
+</body>
+</html>
