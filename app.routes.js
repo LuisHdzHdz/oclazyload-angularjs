@@ -28,10 +28,11 @@
             })
             .state('profile',{
                 url : '/profile',
+                controller : 'ProfileController',
                 templateUrl : 'profile/index.html',
                 resolve : {
                     profile : function($ocLazyLoad){
-                        return ozLazyLoad.load({
+                        return $ocLazyLoad.load({
                             name : 'AppProfile',
                             files : [
                                 'profile/profile.js',
@@ -43,10 +44,11 @@
             })
             .state('message',{
                 url : '/message',
+                controller : 'MessageController',
                 templateUrl : 'message/index.html',
                 resolve : {
                     message : function($ocLazyLoad){
-                        return ozLazyLoad.load({
+                        return $ocLazyLoad.load({
                             name : 'AppMessage',
                             files : [
                                 'message/message.js',
@@ -56,5 +58,6 @@
                     }
                 }
             })
+
     }
 })();
