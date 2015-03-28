@@ -45,6 +45,7 @@
             .state('message',{
                 url : '/message',
                 controller : 'MessageController',
+                controllerAs : 'm',
                 templateUrl : 'message/index.html',
                 resolve : {
                     message : function($ocLazyLoad){
