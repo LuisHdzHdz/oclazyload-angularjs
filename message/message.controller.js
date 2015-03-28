@@ -10,7 +10,7 @@
     function MessageController($log,messageFactory){
         $log.debug('cargo MessageController');
         var vm = this;
-        vm.defecto = 10 // Número de mensajes por defecto
+        vm.defecto = 10;// Número de mensajes por defecto
         messages();
 
         function messages(){
