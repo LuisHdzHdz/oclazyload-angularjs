@@ -1,0 +1,12 @@
+<h1>Messages</h1>
+<h3>Todos los mensajes simulados por un servicio</h3>
+<input placeholder="Nro de Mensajes" type="text" data-ng-model="m.defecto"  />
+<small>Máximo 100</small>
+<br/>
+<br/>
+<ul>
+    <li  data-ng-repeat="item in m.messages | limitTo: m.defecto " >
+        <p>{{item.title}}</p>
+    </li>
+
+</ul>
