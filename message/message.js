@@ -4,8 +4,14 @@
 (function(){
     'use strict';
     angular
-        .module('AppMessage',[{
-            name : 'message.factory',
-            files : ['services/message.factory.js']
-        }]);
+        .module('AppMessage',[
+            {
+                name : 'message.factory',
+                files : ['services/message.factory.js']
+            },
+            {
+                name : 'users.factory',
+                files : ['services/users.factory.js']
+            }
+        ]);
 })();
