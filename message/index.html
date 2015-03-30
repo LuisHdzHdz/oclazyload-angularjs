@@ -8,5 +8,12 @@
     <li  data-ng-repeat="item in m.messages | limitTo: m.defecto " >
         <p>{{item.title}}</p>
     </li>
-
+</ul>
+<hr/>
+<h3>Usuarios</h3>
+<p>Estos usuarios provienen de otro servicio</p>
+<ul>
+    <li data-ng-repeat="item in m.users">
+        {{item.name}} - {{item.email}}
+    </li>
 </ul>
